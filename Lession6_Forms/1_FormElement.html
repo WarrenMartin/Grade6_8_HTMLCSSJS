@@ -1,0 +1,84 @@
+<!-- Directly run this -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Understanding Labels and Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #fff; /* Changed title text color to white */
+        }
+        p {
+            margin: 10px 0;
+        }
+        .banner {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .code-box {
+            background-color: #000; /* Changed code snippet background color to black */
+            color: #fff; /* Changed code snippet text color to white */
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h1>Understanding Labels and Buttons</h1>
+    </div>
+
+    <h2>Labels</h2>
+    <p>A label is used to describe a form element, such as an input field. It helps improve the usability and accessibility of a webpage by providing a text description of the associated element. Labels are typically used with form elements like input fields, radio buttons, checkboxes, and more.</p>
+
+    <p>Here is an example of a label:</p>
+    <pre class="code-box"> <!-- Added code-box class for code snippet -->
+        &lt;label &gt;Username:&lt;/label&gt;
+    </pre>
+
+    <h2>Buttons</h2>
+    <p>Buttons are interactive elements on a webpage that allow users to perform actions. They can be used to submit forms, trigger JavaScript functions, or navigate to other parts of the website. There are various types of buttons, including:</p>
+    <ul>
+        <li><strong>Submit Button:</strong> Used to submit a form.</li>
+        <li><strong>Button Element:</strong> A general-purpose button for custom JavaScript actions.</li>
+    </ul>
+
+    <p>Here is an example of a submit button:</p>
+    <pre class="code-box"> <!-- Added code-box class for code snippet -->
+        &lt;input type="submit" value="Submit"&gt;
+    </pre>
+
+    <h2>Code Snippet</h2>
+    <p>Let's put it all together with a simple form that uses labels and a submit button:</p>
+    <pre class="code-box"> <!-- Added code-box class for code snippet -->
+        &lt;form action="submit.php" method="post"&gt;
+            &lt;label &gt;Username:&lt;/label&gt;
+            &lt;input type="text" id="username" name="username"&gt;
+            &lt;br&gt;
+            &lt;label &gt;Password:&lt;/label&gt;
+            &lt;input type="password" id="password" name="password"&gt;
+            &lt;br&gt;
+            &lt;input type="submit" value="Submit"&gt;
+        &lt;/form&gt;
+    </pre>
+
+    <p>This code creates a simple form with labels for the "Username" and "Password" fields and a submit button.</p>
+    <form action="submit.php" method="post">
+        <label >Username:</label>
+        <input type="text" id="username" name="username">
+        <br>
+        <label >Password:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

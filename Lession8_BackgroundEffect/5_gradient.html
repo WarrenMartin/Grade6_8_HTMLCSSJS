@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gradient</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #fff;
+            background-color: #333;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin: 10px 0;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .activity {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .output {
+            display: none;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .gradient-box {
+            width: 300px;
+            height: 200px;
+            margin: 10px auto;
+        }
+
+        /* Linear Gradient Examples */
+        .linear-gradient-top-to-bottom {
+            background: linear-gradient(to bottom, #ff5722, #2196F3);
+        }
+
+        .linear-gradient-left-to-right {
+            background: linear-gradient(to right, #ff5722, #2196F3);
+        }
+
+        .linear-gradient-diagonal {
+            background: linear-gradient(to bottom right, #ff5722, #2196F3);
+        }
+
+        .linear-gradient-multicolor {
+            background: linear-gradient(to right, #ff5722, #2196F3, #4CAF50, #FFC107);
+        }
+
+        /* Radial Gradient Example */
+        .radial-gradient-example {
+            background: radial-gradient(circle at center, #4CAF50, #FFC107);
+        }
+    </style>
+</head>
+<body>
+    <h1>Gradient</h1>
+
+    <div class="container">
+        <h2>What is Gradient?</h2>
+        <p>A gradient is a smooth transition between two or more colors. It can create beautiful color effects on elements like backgrounds.</p>
+
+        <h2>Types of Gradients</h2>
+        <p>There are two main types of gradients:</p>
+        <ol>
+            <li><strong>Linear Gradient:</strong> It creates a transition in a straight line.</li>
+            <li><strong>Radial Gradient:</strong> It creates a transition in a circular or radial pattern.</li>
+        </ol>
+
+        <h3>Linear Gradient Examples</h3>
+        <div class="activity">
+            <p>Top to Bottom:</p>
+            <pre>.linear-gradient-top-to-bottom {<br>    background: linear-gradient(to bottom, #ff5722, #2196F3);<br>}</pre>
+            
+            <button onclick="showOutput('output-linear-gradient-top-to-bottom')">Show Output</button>
+            <div id="output-linear-gradient-top-to-bottom" class="output">
+                <p>This is an example of a linear gradient from top to bottom:</p>
+                <div class="gradient-box linear-gradient-top-to-bottom"></div>
+            </div>
+
+            <p>Left to Right:</p>
+            <pre>.linear-gradient-left-to-right {<br>    background: linear-gradient(to right, #ff5722, #2196F3);<br>}</pre>
+            
+            <button onclick="showOutput('output-linear-gradient-left-to-right')">Show Output</button>
+            <div id="output-linear-gradient-left-to-right" class="output">
+                <p>This is an example of a linear gradient from left to right:</p>
+                <div class "gradient-box linear-gradient-left-to-right"></div>
+            </div>
+
+            <p>Diagonal:</p>
+            <pre>.linear-gradient-diagonal {<br>    background: linear-gradient(to bottom right, #ff5722, #2196F3);<br>}</pre>
+            
+            <button onclick="showOutput('output-linear-gradient-diagonal')">Show Output</button>
+            <div id="output-linear-gradient-diagonal" class="output">
+                <p>This is an example of a diagonal linear gradient:</p>
+                <div class="gradient-box linear-gradient-diagonal"></div>
+            </div>
+
+            <p>Multicolor Gradient:</p>
+            <pre>.linear-gradient-multicolor {<br>    background: linear-gradient(to right, #ff5722, #2196F3, #4CAF50, #FFC107);<br>}</pre>
+            
+            <button onclick="showOutput('output-linear-gradient-multicolor')">Show Output</button>
+            <div id="output-linear-gradient-multicolor" class="output">
+                <p>This is an example of a multicolor linear gradient:</p>
+                <div class="gradient-box linear-gradient-multicolor"></div>
+            </div>
+        </div>
+
+        <h3>Radial Gradient Example</h3>
+        <div class="activity">
+            <p>CSS:</p>
+            <pre>.radial-gradient-example {<br>    background: radial-gradient(circle at center, #4CAF50, #FFC107);<br>}</pre>
+            
+            <button onclick="showOutput('output-radial-gradient')">Show Output</button>
+            <div id="output-radial-gradient" class="output">
+                <p>This is an example of a radial gradient:</p>
+                <div class="gradient-box radial-gradient-example"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showOutput(outputId) {
+            var output = document.getElementById(outputId);
+            if (output.style.display === "none" || output.style.display === "") {
+                output.style.display = "block";
+            } else {
+                output.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

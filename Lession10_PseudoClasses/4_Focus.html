@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn How to Use :focus Pseudo-Class</title>
+    <style>
+        /* CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #0077b6;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        form {
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            font-size: 1.2em;
+            border: 1px solid #ccc;
+        }
+        input:focus {
+            border-color: hotpink;
+        }
+        /* CSS code snippet style */
+        pre {
+            background-color: #f2f2f2;
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+            white-space: pre-wrap;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Learn How to Use :focus Pseudo-Class</h1>
+    </header>
+    <section>
+        <h2>The :focus Pseudo-Class</h2>
+        <p>The <code>:focus</code> pseudo-class is used to select an element when it is in focus. It is often applied to form elements like input fields to change their appearance when they are clicked or selected.</p>
+
+        <h2>Example: Changing Input Border on Focus</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </form>
+
+        <pre>
+            <code>
+input:focus {
+    border-color: hotpink;
+}
+            </code>
+        </pre>
+    </section>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Understanding Opacity in CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        .opacity-demo {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            opacity: 0.7; /* Adjust the opacity value here */
+        }
+
+        .code-demo {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Understanding Opacity in CSS</h1>
+        <div class="section">
+            <h2>What is Opacity?</h2>
+            <p>Opacity is a CSS property that determines the level of transparency of an element. It can make elements partially see-through, allowing the content behind them to be visible to varying degrees.</p>
+        </div>
+        <div class="section">
+            <h2>Opacity Example</h2>
+            <p>Here's an example of an element with opacity applied:</p>
+            <div class="opacity-demo">This is a box with reduced opacity.</div>
+        </div>
+        <div class="section">
+            <h2>Code Demo</h2>
+            <p>You can control the opacity of an element using the <code>opacity</code> property in your CSS. Here's the code:</p>
+            <div class="code-demo">
+                <pre><code>
+.opacity-demo {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    opacity: 0.7; /* Adjust the opacity value here (0.0 to 1.0) */
+}
+                </code></pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Understanding Background Attachment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #fff;
+            background-color: #333;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin: 10px 0;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .activity {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .output {
+            display: none;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .background-box {
+            width: 300px;
+            height: 200px;
+            background-image: url('image2.png');
+        }
+
+        .background-scroll {
+            background-attachment: scroll;
+        }
+
+        .background-fixed {
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Understanding Background Attachment</h1>
+
+    <div class="container">
+        <h2>Background Attachment Property</h2>
+        <p>The "background-attachment" property defines whether a background image is fixed or scrolls with the content. Here are two common values:</p>
+
+        <h3>1. scroll</h3>
+        <p>The "scroll" value is the default behavior, where the background image scrolls along with the content. This means as you scroll down the page, the image moves.</p>
+
+        <div class="activity">
+            <p>HTML:</p>
+            <pre>&lt;div class="background-box background-scroll"&gt;Scroll&lt;/div&gt;</pre>
+            
+            <p>CSS:</p>
+            <pre>.background-scroll {<br>    background-image: url('background.jpg');<br>    background-attachment: scroll;<br>    width: 300px;<br>    height: 200px;<br>}</pre>
+            
+            <button onclick="showOutput('output-scroll')">Show Output</button>
+            <div id="output-scroll" class="output">
+                <p>The "scroll" value is the default behavior, where the background image scrolls along with the content. This means as you scroll down the page, the image moves.</p>
+                <div class="background-box background-scroll">Scroll</div>
+            </div>
+        </div>
+
+        <h3>2. fixed</h3>
+        <p>The "fixed" value makes the background image fixed in place, so it doesn't move as you scroll. This can create a parallax effect or make the background appear "stuck" to the viewport.</p>
+
+        <div class "activity">
+            <p>HTML:</p>
+            <pre>&lt;div class="background-box background-fixed"&gt;Fixed&lt;/div&gt;</pre>
+            
+            <p>CSS:</p>
+            <pre>.background-fixed {<br>    background-image: url('background.jpg');<br>    background-attachment: fixed;<br>    width: 300px;<br>    height: 200px;<br>}</pre>
+            
+            <button onclick="showOutput('output-fixed')">Show Output</button>
+            <div id="output-fixed" class="output">
+                <p>The "fixed" value makes the background image fixed in place, so it doesn't move as you scroll. This can create a parallax effect or make the background appear "stuck" to the viewport.</p>
+                <div class="background-box background-fixed">Fixed</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showOutput(outputId) {
+            var output = document.getElementById(outputId);
+            if (output.style.display === "none" || output.style.display === "") {
+                output.style.display = "block";
+            } else {
+                output.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

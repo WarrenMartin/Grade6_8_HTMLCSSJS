@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap Container Example</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for the colorful banner */
+        .banner {
+            background-color: #104b97;
+            color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <!-- Colorful banner for the title -->
+        <div class="banner text-center">
+            <h1>Understanding Containers in Bootstrap</h1>
+            <p class="lead">A container is a fundamental building block in Bootstrap's grid system.</p>
+        </div>
+
+        <section>
+            <h2>What is a Container?</h2>
+            <p>
+                In Bootstrap, a container is a wrapper for content on your page. It provides a simple and effective way to
+                center your content and keep it organized.
+            </p>
+        </section>
+
+        <section>
+            <h2>Types of Containers</h2>
+            <!-- Colorful banner for the section title -->
+            <div class="banner">
+                <p class="text-center">Bootstrap has two types of containers:</p>
+                <ul>
+                    <li><strong>.container:</strong> Fixed-width container.</li>
+                    <li><strong>.container-fluid:</strong> The class container-fluid provides a full width container that spans the entire width of the viewport .</li>
+                    <li><strong>.container-breakpoint:</strong> which is width 100% until the specified breakpoints.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>How to Use Containers</h2>
+            <p>
+                To use a container, simply add the class <code>.container</code> or <code>.container-fluid</code> to a
+                <code>&lt;div&gt;</code> element.
+            </p>
+            <pre>
+<code>&lt;div class="container"&gt;
+    <!-- Your content goes here -->
+&lt;/div&gt;</code>
+</pre>
+            <pre>
+<code>&lt;div class="container-fluid"&gt;
+    <!-- Your content goes here -->
+&lt;/div&gt;</code>
+</pre>
+
+<pre>
+    <code>&lt;div class="container-breakpoint"&gt;
+        <!-- Your content goes here -->
+    &lt;/div&gt;</code>
+    </pre>
+        </section>
+
+        <section>
+            <h2>Responsive Utility Classes</h2>
+            <p>
+                Bootstrap provides responsive utility classes to control the layout at different breakpoints. For example,
+                <code>.col-sm-6</code> means the column will take 6 units on small screens.
+            </p>
+        </section>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <p>This content takes half of the width on small screens and full width on larger screens.</p>
+            </div>
+            <div class="col-sm-6">
+                <p>This content also takes half of the width on small screens and full width on larger screens.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Add Bootstrap JS and Popper.js (if needed) scripts here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

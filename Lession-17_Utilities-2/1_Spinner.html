@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Spinner</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navigation Bar</a>
+            <!-- Add your navigation links here -->
+        </nav>
+    </header>
+
+    <div class="container mt-4">
+        <h2>Topics Covered Today</h2>
+        <ol>
+            <li>Spinner</li>
+            <li>Cards</li>
+            <li>Navigation Bar</li>
+            <li>Pagination</li>
+        </ol>
+
+        <h3>Spinner in Bootstrap</h3>
+
+        <p>
+            A spinner is a visual indicator that shows the loading or processing state of a web page or a specific component.
+            It informs users that some operation is in progress, and they should wait until it completes.
+        </p>
+
+        <p>
+            In Bootstrap, spinners are part of the utility component set and are easy to integrate into your web applications.
+            They come in different sizes and colors, allowing you to customize them based on your design requirements.
+        </p>
+
+        <h4>Types of Spinners</h4>
+
+        <p>
+            Bootstrap provides two types of spinners: border spinners and growing spinners.
+        </p>
+
+        <ul>
+            <li>
+                <strong>Border Spinners:</strong> These spinners have a border and are ideal for light background colors.
+                You can customize the color using contextual classes like <code>text-primary</code>, <code>text-danger</code>, etc.
+            </li>
+            <li>
+                <strong>Growing Spinners:</strong> These spinners do not have a border and are suitable for dark background colors.
+                They also support contextual classes for different colors.
+            </li>
+        </ul>
+
+        <h4>How to Use Spinners</h4>
+
+        <p>
+            To use a spinner, add the <code>spinner-border</code> or <code>spinner-grow</code> class along with the appropriate
+            text color class to an empty <code>&lt;div&gt;</code> element.
+        </p>
+
+        <p>
+            Here's a simple example of a border spinner:
+        </p>
+
+        <div class="spinner-border text-primary" role="status">
+            <!-- <span class="sr-only">Loading...</span> -->
+        </div>
+
+        <p>
+            And a growing spinner:
+        </p>
+
+        <div class="spinner-grow text-danger" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+
+        <p>
+            You can further customize the spinner by adjusting its size using <code>spinner-border-sm</code>,
+            <code>spinner-grow-sm</code>, <code>spinner-border-lg</code>, or <code>spinner-grow-lg</code> classes.
+        </p>
+
+        <h4>Conclusion</h4>
+
+        <p>
+            Spinners are essential for providing feedback to users about ongoing processes, making the user experience smoother
+            and more informative. Bootstrap's spinner component simplifies the integration of loading indicators into your
+            projects, offering flexibility and consistency in design.
+        </p>
+
+        <h3>Program to Add Spinner Using Bootstrap</h3>
+        
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+
+        <h4>Code Snippet</h4>
+        <pre>
+            <!-- Add your HTML and Bootstrap code here -->
+            &lt;div class="spinner-border text-primary" role="status"&gt;
+                &lt;span class="sr-only"&gt;Loading...&lt;/span&gt;
+            &lt;/div&gt;
+        </pre>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

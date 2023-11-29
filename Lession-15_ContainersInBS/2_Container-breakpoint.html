@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap Container Example</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for the colorful banner */
+        .banner {
+            background-color: #104b97;
+            color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+
+        
+    /* Media queries for different screen sizes */
+    @media screen and (max-width: 575px) {
+      /* Extra Small (xs) screens */
+      body::before {
+        content: "This is an Extra Small (xs) screen.";
+        display: block;
+        background-color: #f2f2f2;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+        color: #333;
+      }
+    }
+
+    @media screen and (min-width: 576px) and (max-width: 767px) {
+      /* Small screens */
+      body::before {
+        content: "This is a Small screen.";
+        display: block;
+        background-color: #f2f2f2;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+        color: #333;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      /* Medium screens */
+      body::before {
+        content: "This is a Medium screen.";
+        display: block;
+        background-color: #f2f2f2;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+        color: #333;
+      }
+    }
+    @media screen and (min-width: 969px) and (max-width: 1199px) {
+      /* Medium screens */
+      body::before {
+        content: "This is a Large Screens (lg).";
+        display: block;
+        background-color: #f2f2f2;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+        color: #333;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      /* Extra Large (xl) screens */
+      body::before {
+        content: "This is an Extra Large (xl) screen.";
+        display: block;
+        background-color: #f2f2f2;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+        color: #333;
+      }
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-md bg-primary text-white">
+
+
+        <h1 >Code -Container-md  (Breakpoint)</h1>
+        <p>Container-md which will make full screen uptil medium screen size and after medium it behave like container layout</p>
+       
+    </div>
+
+    <div class="container border 5px solid black bg-warning"> 
+        <h1>Code container </h1>
+        <p>Occupies a fixed width that is predefined by container  layout</p>
+      </div>
+      
+      <div class="container-fluid p-3000 mb-300  bg-primary text-white">
+        <h1>Code Fluid </h1>
+        <p>occupy entire view port screen size</p>
+      </div>
+      
+      <div class ="container-lg p-3 my-3 bg-danger text-white"> 
+        <h1>Code -Container
+          -lg (Breakpoint) </h1> 
+        <p>Container-lg will work like containerfluid till lg screen for xl and xxl it will turn into container </p> 
+      </div>
+
+    <!-- Add Bootstrap JS and Popper.js (if needed) scripts here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

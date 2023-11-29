@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform Property</title>
+    <style>
+        /* CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #0077b6;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .transform-example {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #0077b6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Transform Property</h1>
+    </header>
+    <section>
+        <h2>RotateX Transformation</h2>
+        <div class="transform-example" style="transform: rotateX(0deg);">&#11014;(uparrow)</div>
+        <p>The CSS <code>rotateX</code> transformation is used to rotate an element around its horizontal axis. In this example, the element is rotated by 180 degrees along the X-axis, which flips it vertically.</p>
+
+        <h2>RotateY Transformation</h2>
+        <div class="transform-example" style="transform: rotateY(0deg);">→(rightarrow)</div>
+        <p>The CSS <code>rotateY</code> transformation is used to rotate an element around its vertical axis. In this example, the element is rotated by 180 degrees along the Y-axis, which flips it horizontally.</p>
+
+        <!-- Code snippet displayed on the webpage -->
+        <pre>
+            &lt;div class="transform-example" style="transform: rotateX(0deg);"&gt;&#11014;(uparrow)&lt;/div&gt;
+            &lt;div class="transform-example" style="transform: rotateY(0deg);"&gt;→(rightarrow)&lt;/div&gt;
+        </pre>
+    </section>
+</body>
+</html>

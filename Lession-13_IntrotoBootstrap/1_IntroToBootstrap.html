@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .title-banner {
+            background-color: #104b97;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .dependency-box {
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        .info-box {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-banner">
+            <h1 class="text-center">Understanding Bootstrap</h1>
+        </div>
+
+        <div class="info-box">
+            <h2>What is Bootstrap?</h2>
+            <p>Bootstrap is a widely-used CSS framework that simplifies web development by providing pre-designed styles, components, and JavaScript functionality.</p>
+        </div>
+
+        <div class="info-box">
+            <h2>Why Use Bootstrap?</h2>
+            <ul>
+                <li><strong>Consistency:</strong> Bootstrap ensures a consistent and professional design for your website.</li>
+                <li><strong>Responsive Design:</strong> It makes your site adaptable to various screen sizes, including mobile devices.</li>
+                <li><strong>Rapid Development:</strong> Bootstrap offers ready-made components that speed up development.</li>
+                <li><strong>Community and Support:</strong> It has a large and active community, making it easy to find help and resources.</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <h2>Bootstrap Grid System</h2>
+            <p>Bootstrap's grid system is based on a 12-column layout, which is fundamental to creating responsive designs. It uses container, rows, and columns to structure your content.</p>
+            <p><strong>Containers:</strong> These act as the outermost element to contain the layout.</p>
+            <p><strong>Rows:</strong> Rows are used to create horizontal groups of columns. They ensure proper alignment and padding.</p>
+            <p><strong>Columns:</strong> Columns are used to define how content spans across the 12 available columns. They are specified using classes like 'col-sm-4'.</p>
+            <p>If you want three equal-width columns, you can use the 'col-sm-4' class on each column:</p>
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>Column 1</p>
+                </div>
+                <div class="col-sm-4">
+                    <p>Column 2</p>
+                </div>
+                <div class="col-sm-4">
+                    <p>Column 3</p>
+                </div>
+            </div>
+            <p>In this example, each column occupies 4 out of the 12 possible columns, resulting in three equal-width columns.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Text-Indent</title>
+    <style>
+        /* CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #0077b6;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .example {
+            margin: 20px 0;
+        }
+        .example p {
+            margin: 0;
+        }
+        .code-example {
+            background-color: #eee;
+            padding: 10px;
+            border: 1px solid #ccc;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Text Shadow, Box Shadow, and Text Indent</h1>
+    </header>
+    <section>
+        <h2>Text Shadow</h2>
+        <div class="example">
+            <p style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Text Shadow Example</p>
+        </div>
+        <div class="code-example">
+            <pre>
+&lt;p style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Text Shadow Example&lt;/p>
+            </pre>
+        </div>
+        <p>
+            The CSS <code>text-shadow</code> property is used to add a shadow to text. It takes parameters like the horizontal and vertical offset, blur radius, and color.
+        </p>
+
+        <h2>Box Shadow</h2>
+        <div class="example">
+            <div style="width: 150px; height: 150px; background-color: #0077b6; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);"></div>
+        </div>
+        <div class="code-example">
+            <pre>
+&lt;div style="width: 150px; height: 150px; background-color: #0077b6; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);">&lt;/div>
+            </pre>
+        </div>
+        <p>
+            The CSS <code>box-shadow</code> property adds shadow to elements like divs, buttons, and more. You can specify the horizontal and vertical offset, blur radius, spread, and color.
+        </p>
+
+        <h2>Text Indent</h2>
+        <div class="example">
+            <p style="text-indent: 20px;">This is an example of text with an indent. Text is pushed in by 20px.</p>
+        </div>
+        <div class="code-example">
+            <pre>
+&lt;p style="text-indent: 20px;">This is an example of text with an indent. Text is pushed in by 20px.&lt;/p>
+            </pre>
+        </div>
+        <p>
+            The CSS <code>text-indent</code> property is used to specify the indentation of the first line in a text block. It can be used with paragraphs and other text elements.
+        </p>
+    </section>
+</body>
+</html>

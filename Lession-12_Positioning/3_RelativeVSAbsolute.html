@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Relative vs. Absolute Positioning in CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        .relative-demo {
+            position: relative;
+            border: 2px solid #007BFF;
+            padding: 10px;
+        }
+
+        .absolute-demo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border: 2px solid #FF5733;
+            padding: 10px;
+        }
+
+        .code-demo {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Relative vs. Absolute Positioning in CSS</h1>
+        <div class="section">
+            <h2>Relative Positioning</h2>
+            <p>With <code>position: relative</code>, elements are adjusted relative to their original position on the page. They can be moved using properties like <code>top</code>, <code>bottom</code>, <code>left</code>, or <code>right</code, but the surrounding elements are not affected.</p>
+            <div class="relative-demo">Relative Position</div>
+        </div>
+        <div class="section">
+            <h2>Absolute Positioning</h2>
+            <p>On the other hand, <code>position: absolute</code> treats elements as detached from the normal document flow. They can be precisely placed based on their nearest positioned ancestor or the page's edges, without impacting the layout of other elements.</p>
+            <div class="absolute-demo">Absolute Position</div>
+        </div>
+        <div class="section">
+            <h2>Key Differences</h2>
+            <ul>
+                <li><strong>Relative:</strong> Elements are adjusted relative to their original position, and they affect the layout of other elements.</li>
+                <li><strong>Absolute:</strong> Elements are detached from the normal flow and do not affect the layout of other elements.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Code Demo</h2>
+            <p>Here's a code example demonstrating the difference between relative and absolute positioning:</p>
+            <div class="code-demo">
+                <pre><code>
+.relative-demo {
+    position: relative;
+    left: 10px; /* Move 10 pixels to the right */
+}
+
+.absolute-demo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+                </code></pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

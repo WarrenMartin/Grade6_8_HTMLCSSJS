@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Understanding Fieldset and Legend Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #fff;
+            background-color: #333;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .banner {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        fieldset {
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        legend {
+            font-weight: bold;
+        }
+        .code-box {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Understanding Fieldset and Legend Elements</h1>
+
+    <div class="container">
+        <h2>Example: Personal Information</h2>
+        <p>The <strong>&lt;fieldset&gt;</strong> element is used to group related form elements within a web form. It creates a visual and semantic container for grouping form controls.</p>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+        </fieldset>
+        
+        <h2>Code Snippet</h2>
+        <p>Here's the code snippet for creating the fieldset and legend:</p>
+        <pre class="code-box">
+            &lt;fieldset&gt;
+                &lt;legend&gt;Personal Information&lt;/legend&gt;
+                &lt;label for="name"&gt;Name:&lt;/label&gt;
+                &lt;input type="text" id="name" name="name"&gt;
+                &lt;label for="email"&gt;Email:&lt;/label&gt;
+                &lt;input type="email" id="email" name="email"&gt;
+            &lt;/fieldset&gt;
+        </pre>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <style>
+        .container {
+            background-color: yellow;
+            padding: 20px;
+        }
+
+        .box {
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: warren;
+            animation-duration: 2s;
+            animation-iteration-count: 5;
+        }
+
+        @keyframes warren {
+            from {
+                width: 200px;
+            }
+            to {
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation with Keyframes</h1>
+    <div class="container">
+        <p>This is a simple example of CSS animations using keyframes.</p>
+        <p>The code snippet for the animation keyframes:</p>
+        <pre>
+@keyframes warren {
+    from {
+        width: 200px;
+    }
+    to {
+        width: 400px;
+    }
+}
+        </pre>
+        <button onclick="startAnimation()">Show Output</button>
+        <div class="box" id="outputBox">
+            This is a box
+        </div>
+    </div>
+
+    <script>
+        function startAnimation() {
+            var box = document.getElementById("outputBox");
+            box.style.animation = "warren 2s 5";
+        }
+    </script>
+</body>
+</html>

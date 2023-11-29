@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Inner HTML</title>
+
+        <style>
+            div{
+                width: 250px;
+                height: 250px;
+                color: white;
+                background-color: lightblue;
+            }
+            
+        </style>
+
+        <body>
+            <div>
+                <p class="abc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, exercitationem.</p>
+            </div>
+<hr>
+            <div>
+                <p class="abc"></p>
+            </div>
+
+            <script>
+                document.getElementsByClassName("abc").innerHTML="I have replaced it"
+                // document.getElementById("abc").innerHTML="I have replaced it"
+            </script>
+        </body>
+    </head>
+</html>

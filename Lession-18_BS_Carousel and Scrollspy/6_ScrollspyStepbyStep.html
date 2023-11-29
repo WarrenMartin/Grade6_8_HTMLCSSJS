@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Scrollspy Tutorial</title>
+  <style>
+    body {
+      position: relative;
+    }
+    #section1 {padding-top: 60px;height: 500px;color: #fff;background-color: #1E88e5;}
+    #section2 {padding-top: 60px;height: 500px;color: #fff;background-color: #673ab7;}
+    #section3 {padding-top: 60px;height: 500px;color: #fff;background-color: #ff9800;}
+    #section4 {padding-top: 60px;height: 500px;color: #fff;background-color: #00bcd4;}
+    .navbar-nav .active > .nav-link {
+      color: #fff;
+    }
+  </style>
+</head>
+<body data-spy="scroll" data-target="#myNavbar" data-offset="50">
+
+  <nav id="myNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Scrollspy Tutorial</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarToggler"></button>
+    <div class="collapse navbar-collapse" id="navbarToggle">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#section1">Introduction</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section2">Step 1</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section3">Step 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section4">Step 3</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="section1" class="container-fluid">
+    <h1>Introduction to Scrollspy</h1>
+    <p>Scrollspy is a Bootstrap feature that updates the navigation bar based on scroll position. It enhances the user experience by highlighting the corresponding navigation link as the user scrolls through different sections of a webpage.</p>
+  </div>
+
+  <div id="section2" class="container-fluid">
+    <h1>Step 1: Include Scrollspy Attributes</h1>
+    <p>Enable Scrollspy behavior by adding data attributes to your body tag.</p>
+    <code>&lt;body data-spy="scroll" data-target="#myNavbar" data-offset="50"&gt;</code>
+  </div>
+
+  <div id="section3" class="container-fluid">
+    <h1>Step 2: Update Navigation Links</h1>
+    <p>Ensure your navigation links correspond to the sections with proper IDs.</p>
+    <code>&lt;a class="nav-link" href="#section1"&gt;Introduction&lt;/a&gt;</code>
+  </div>
+
+  <div id="section4" class="container-fluid">
+    <h1>Step 3: Activate Scrollspy with JavaScript</h1>
+    <p>Include a script to activate Scrollspy. This initializes Scrollspy on your page.</p>
+    <code>
+      &lt;script&gt;
+        $('body').scrollspy({ target: '#myNavbar' });
+      &lt;/script&gt;
+    </code>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

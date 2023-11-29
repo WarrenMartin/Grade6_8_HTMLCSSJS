@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 20px;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    p {
+      color: #555;
+    }
+    code {
+      background-color: #f0f0f0;
+      padding: 4px 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      display: inline-block;
+      margin: 0 2px;
+    }
+    .section {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin: 20px 0;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <title>JavaScript Concepts: Regular Expressions and Loops</title>
+</head>
+<body>
+  <h1>JavaScript Concepts: Regular Expressions and Loops</h1>
+
+  <!-- Regular Expressions Section -->
+  <div class="section">
+    <h2>Regular Expressions</h2>
+
+    <p>A regular expression, or regex, is a powerful tool for pattern matching in strings. It is defined using a combination of characters that represent a specific pattern.</p>
+
+    <h3>Example:</h3>
+    <p>We can create a simple regex to match the word "world" in a string:</p>
+    <code>/world/</code>
+
+    <h3>Usage in JavaScript:</h3>
+    <p>In JavaScript, the <code>test()</code> method is commonly used with regular expressions to check if a string matches a pattern.</p>
+    <code>
+      const pattern = /world/;<br>
+      const stringToTest = "Hello, world!";<br>
+      const containsWorld = pattern.test(stringToTest);<br>
+      console.log(containsWorld); // Output: true
+    </code>
+  </div>
+
+  <!-- Loops Section -->
+  <div class="section">
+    <h2>Loops</h2>
+
+    <p>Loops are used in JavaScript to repeatedly execute a block of code. They provide a way to iterate over a set of data or perform a task multiple times.</p>
+
+    <h3>For Loop:</h3>
+    <p>The <code>for</code> loop is used when the number of iterations is known.</p>
+    <code>
+      for (let i = 0; i < 5; i++) {<br>
+        // Code to be repeated<br>
+        console.log(i);<br>
+      }
+    </code>
+
+    <h3>While Loop:</h3>
+    <p>The <code>while</code> loop is used when the number of iterations is not known in advance.</p>
+    <code>
+      let i = 0;<br>
+      while (i < 5) {<br>
+        // Code to be repeated<br>
+        console.log(i);<br>
+        i++;<br>
+      }
+    </code>
+  </div>
+
+</body>
+</html>

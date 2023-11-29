@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Understanding Background Attributes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #fff;
+            background-color: #333;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin: 10px 0;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .activity {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .output {
+            display: none;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .image-container {
+            background-image: url('image.jpg');
+            background-size: cover;
+            width: 300px; /* Add your preferred width */
+            height: 200px; /* Add your preferred height */
+        }
+    </style>
+</head>
+<body>
+    <h1>Understanding Background Attributes</h1>
+
+    <div class="container">
+        <h2>Background-Color Property</h2>
+        <p>The "background-color" property is used to set the background color of an HTML element. You can specify colors using color names or hexadecimal codes. Here's an example:</p>
+
+        <div class="activity">
+            <p>HTML:</p>
+            <pre>&lt;div style="background-color: lightblue;"&gt;This is a light blue background.&lt;/div&gt;</pre>
+            
+            <p>CSS:</p>
+            <pre><em>No separate CSS code needed for inline styles.</em></pre>
+            
+            <button onclick="showOutput('output1')">Show Output</button>
+            <div id="output1" class="output">
+                <div style="background-color: grey;">This is a grey background.<br> And all the content will come here</div>
+            </div>
+        </div>
+
+        <h2>Background-Image Property</h2>
+        <p>The "background-image" property is used to set an image as the background of an HTML element. You can specify the image's URL. Here's an example:</p>
+
+        <div class="activity">
+            <p>HTML:</p>
+            <pre>&lt;div class="image-container"&gt;Image Background&lt;/div&gt;</pre>
+            
+            <p>CSS:</p>
+            <pre>.image-container {<br>    background-image: url('background.jpg');<br>    background-size: cover;<br>    width: 300px; /* Add your preferred width */<br>    height: 200px; /* Add your preferred height */<br>}</pre>
+            
+            <button onclick="showOutput('output2')">Show Output</button>
+            <div id="output2" class="output image-container">
+
+                Image Background
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showOutput(outputId) {
+            var output = document.getElementById(outputId);
+            if (output.style.display === "none" || output.style.display === "") {
+                output.style.display = "block";
+            } else {
+                output.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

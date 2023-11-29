@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Video Example</title>
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        video {
+            display: block;
+            margin: 0 auto;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Video Example</h1>
+    </header>
+
+    <div class="container">
+        <p>Below is an example of how to add a video to a webpage using HTML:</p>
+
+        <video controls width="640" height="360" autoplay>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+
+        <h2>Explanation</h2>
+        <p>The HTML code provided above demonstrates how to embed a video in a webpage. Let's break it down:</p>
+        <div style="text-align: center;"><img src="videocode.png">
+        </div>
+        <ul>
+            <li>The &lt;video&gt; element is used to include the video content. The <code>controls</code> attribute adds playback controls (play, pause, volume, etc.) for user interaction.</li>
+            <li>The <code>width</code> and <code>height</code> attributes define the dimensions of the video player.</li>
+            <li>The <code>&lt;source&gt;</code> element within the video element specifies the video source file and its type. Multiple source elements can be used to provide different video formats for browser compatibility.</li>
+            <li>If the browser does not support the video format provided, the message "Your browser does not support the video element" is displayed as a fallback.</li>
+        </ul>
+
+        <p>This is how you can embed videos in your web pages to make them more interactive and engaging.</p>
+        
+    </div>
+</body>
+</html>

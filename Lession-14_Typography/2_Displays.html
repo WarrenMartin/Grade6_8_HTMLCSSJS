@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>Bootstrap Display Headings</title>
+  <style>
+    /* Custom styles go here */
+    .banner {
+      background-color: #104b97;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid banner">
+    <h1>Display Headings, Small, and DL in Bootstrap</h1>
+  </div>
+
+  <div class="container mt-5">
+    <section>
+      <h2>Display Headings</h2>
+      <p>
+        Bootstrap provides display headings to make a bold statement on your page. These are used with classes like <code>.display-1</code>, <code>.display-2</code>, <code>.display-3</code>, and <code>.display-4</code>.
+      </p>
+      <pre>
+        <code>
+          &lt;div class="display-1"&gt;Display 1&lt;/div&gt;
+          &lt;div class="display-2"&gt;Display 2&lt;/div&gt;
+          &lt;div class="display-3"&gt;Display 3&lt;/div&gt;
+          &lt;div class="display-4"&gt;Display 4&lt;/div&gt;
+        </code>
+      </pre>
+      <!-- Output -->
+      <div class="display-1">Display 1</div>
+      <div class="display-2">Display 2</div>
+      <div class="display-3">Display 3</div>
+      <div class="display-4">Display 4</div>
+    </section>
+
+    <section>
+      <h2>Small Element</h2>
+      <p>
+        The <code>&lt;small&gt;</code> element in Bootstrap is used to create smaller, de-emphasized text. It is often used for fine print or disclaimers.
+      </p>
+      <pre>
+        <code>
+          &lt;p&gt;&lt;small&gt;This is small text.&lt;/small&gt;&lt;/p&gt;
+        </code>
+      </pre>
+      <!-- Output -->
+      <p><small>This is small text.</small></p>
+    </section>
+
+    <section>
+      <h2>Definition List (DL)</h2>
+      <p>
+        The <code>&lt;dl&gt;</code> element in HTML is used to create a description list. In Bootstrap, it can be styled using utility classes.
+      </p>
+      <pre>
+        <code>
+          &lt;dl class="row"&gt;
+            &lt;dt class="col-sm-3"&gt;Term 1&lt;/dt&gt;
+            &lt;dd class="col-sm-9"&gt;Description 1&lt;/dd&gt;
+            &lt;dt class="col-sm-3"&gt;Term 2&lt;/dt&gt;
+            &lt;dd class="col-sm-9"&gt;Description 2&lt;/dd&gt;
+          &lt;/dl&gt;
+        </code>
+      </pre>
+      <!-- Output -->
+      <dl class="row">
+        <dt class="col-sm-3">Term 1</dt>
+        <dd class="col-sm-9">Description 1</dd>
+        <dt class="col-sm-3">Term 2</dt>
+        <dd class="col-sm-9">Description 2</dd>
+      </dl>
+    </section>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

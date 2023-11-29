@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Understanding HTML Tags: aside and figure</title>
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .code-example {
+            background-color: #f2f2f2;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        /* Styling for the figure */
+        figure {
+            text-align: center;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        figure img {
+        width: 100%; /* Adjust the width as needed */
+        max-width: 100%; /* Ensure the image does not exceed its container */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding HTML Tags: aside and figure</h1>
+    </header>
+
+    <div class="container">
+        <h2>The &lt;aside&gt; Tag</h2>
+        <p>The &lt;aside&gt; tag is used to mark content that is related to the content around it but can be considered separate. It's often used for sidebars, additional information, or advertisements. Here's a simple example:</p>
+
+        <aside>
+            <h3>Advertisement</h3>
+            <p>Check out our latest products!</p>
+            <a href="#">Learn more</a>
+        </aside>
+
+        <h2>The &lt;figure&gt; Tag</h2>
+        <p>The &lt;figure&gt; tag is used to encapsulate any content that is referenced from the main content, such as images, diagrams, charts, or videos. It's often used with the &lt;figcaption&gt; element to provide a caption. Here's a basic example:</p>
+
+        <figure>
+            <img src="image1.jpg" alt="A sample image" />
+            <figcaption>This is a sample image with a caption.</figcaption>
+        </figure>
+    </div>
+</body>
+</html>

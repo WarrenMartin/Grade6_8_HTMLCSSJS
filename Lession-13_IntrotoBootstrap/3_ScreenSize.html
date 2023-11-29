@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Grid System</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .col1 {
+      border: 1px solid #333;
+      /* padding: 10px; */
+      text-align: center;
+      /* margin: 5px; */
+      background-color: #3498db;
+      color: white;
+      height: 100%;
+    }
+
+    code {
+      background-color: #1e1e1e;
+      color: #ffffff;
+      display: block;
+      padding: 10px;
+      font-family: Consolas, Monaco, 'Andale Mono', 'Courier New', monospace;
+    }
+
+    /* Media queries for different screen sizes */
+    @media screen and (max-width: 575px) {
+      /* Extra Small (xs) screens */
+      body::before {
+        content: "This is an Extra Small (xs) screen.";
+        display: block;
+        background-color: #f2f2f2;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+        color: #333;
+      }
+    }
+
+    @media screen and (min-width: 576px) and (max-width: 767px) {
+      /* Small screens */
+      body::before {
+        content: "This is a Small screen.";
+        display: block;
+        background-color: #f2f2f2;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+        color: #333;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      /* Medium screens */
+      body::before {
+        content: "This is a Medium screen.";
+        display: block;
+        background-color: #f2f2f2;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+        color: #333;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      /* Extra Large (xl) screens */
+      body::before {
+        content: "This is an Extra Large (xl) screen.";
+        display: block;
+        background-color: #f2f2f2;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+        color: #333;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <h1 class="mt-4">Understanding the Bootstrap Grid System</h1>
+    <p class="lead">In Bootstrap, the grid system allows you to create responsive layouts for your web page. Let's explore how different column classes work for various screen sizes.</p>
+    <div class="row">
+      <div class="col-xl-12 col-sm-6 col-md-3 col1">Column 1</div>
+      <div class="col-lg-4 col-md-3 col1">Column 3 large takes 4 /12 n medium screen 3/12</div>
+      <!-- When specifying col-12, it means it is for extra small devices by default. -->
+      <!-- Bootstrap follows a mobile-first approach, so if no screen size is mentioned, it defaults to the smallest screen. -->
+
+      <div class="col-12 col1">Column 2</div>
+    </div>
+    <p class="mt-4">Explanation:</p>
+    <ul>
+      <li><strong>Column 1:</strong> This column uses classes "col-xl-12 col-sm-6 col-md-3." It will occupy all 12 columns on extra-large screens (xl), 6 columns on small screens (sm), and 3 columns on medium screens (md).</li>
+      <li><strong>Column 2:</strong> This column uses only "col-12." It will occupy all 12 columns on extra small screens (xs) by default.</li>
+    </ul>
+    <p>Feel free to adjust your browser's window size to see how the columns adapt to different screen sizes.</p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

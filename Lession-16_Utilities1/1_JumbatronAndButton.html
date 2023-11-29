@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Jumbotron and Buttons</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+    <style>
+         .red-bg-jumbotron {
+            background-color: red;
+            color: white; /* Set text color to white for better visibility */
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container mt-5">
+
+    <!-- Jumbotron Section -->
+    <section id="jumbotron">
+        <h2 class="mb-4">Bootstrap Jumbotron</h2>
+
+        <!-- Explanation -->
+        <p>
+            The Jumbotron is a flexible, large container that is designed to showcase key content or information
+            prominently. It is often used at the top of a page to grab the user's attention.
+        </p>
+
+        <!-- Code Snippet -->
+        <pre class="bg-light p-3">
+            &lt;div class="jumbotron"&gt;
+                &lt;h1 class="display-4"&gt;Hello, World!&lt;/h1&gt;
+                &lt;p class="lead"&gt;This is a simple Jumbotron example.&lt;/p&gt;
+            &lt;/div&gt;
+        </pre>
+
+        <!-- Output -->
+        <div class="jumbotron  red-bg-jumbotron">
+            <h1 class="display-4">Hello, World!</h1>
+            <p class="lead">This is a simple Jumbotron example. with nice rounded edges</p>
+        </div>
+    </section>
+
+    <!-- Buttons Section -->
+    <section id="buttons" class="mt-5">
+        <h2 class="mb-4">Bootstrap Buttons</h2>
+
+        <!-- Explanation -->
+        <p>
+            Bootstrap provides styling for various types of buttons. Buttons can be customized with different colors,
+            sizes, and styles to fit your design needs.
+        </p>
+
+        <!-- Code Snippet -->
+        <pre class="bg-light p-3">
+            &lt;button type="button" class="btn btn-primary"&gt;Primary Button&lt;/button&gt;
+            &lt;button type="button" class="btn btn-secondary"&gt;Secondary Button&lt;/button&gt;
+        </pre>
+
+        <!-- Output -->
+        <button type="button" class="btn btn-primary">Primary Button</button>
+        <button type="button" class="btn btn-secondary">Secondary Button</button>
+        <button type="button" class="btn btn-danger">Danger Button</button>
+        <button type="button" class="btn btn-warning">Secondary Button</button>
+        <button type="button" class="btn btn-success">Success Button</button>
+    </section>
+
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+</body>
+</html>

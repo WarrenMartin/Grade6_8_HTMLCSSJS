@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
+    <style>
+        /* Your existing styles remain unchanged */
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JavaScript Basics</h1>
+    </header>
+
+    <!-- Existing sections remain unchanged -->
+
+    <section>
+        <h2>Operators in JavaScript</h2>
+        <p>Operators in JavaScript are symbols that perform operations on operands. They are used to manipulate values and variables in expressions.</p>
+
+        <h3>Arithmetic Operators</h3>
+        <p>Arithmetic operators perform mathematical operations on numeric values.</p>
+
+        <ul>
+            <li><strong>Addition (+):</strong> Adds two numbers.</li>
+            <li><strong>Subtraction (-):</strong> Subtracts the right operand from the left operand.</li>
+            <li><strong>Multiplication (*):</strong> Multiplies two numbers.</li>
+            <li><strong>Division (/):</strong> Divides the left operand by the right operand.</li>
+            <li><strong>Modulus (%):</strong> Returns the remainder of the division.</li>
+        </ul>
+
+        <p>Example:</p>
+        <pre>
+            <code>
+                var x = 10;
+                var y = 3;
+                var sum = x + y;
+                var difference = x - y;
+                var product = x * y;
+                var quotient = x / y;
+                var remainder = x % y;
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h3>Assignment Operators</h3>
+        <p>Assignment operators assign values to variables.</p>
+
+        <ul>
+            <li><strong>Assignment (=):</strong> Assigns the value of the right operand to the left operand.</li>
+            <li><strong>Addition Assignment (+=):</strong> Adds the right operand to the left operand and assigns the result to the left operand.</li>
+            <li><strong>Subtraction Assignment (-=):</strong> Subtracts the right operand from the left operand and assigns the result to the left operand.</li>
+            <li><strong>Multiplication Assignment (*=):</strong> Multiplies the left operand by the right operand and assigns the result to the left operand.</li>
+            <li><strong>Division Assignment (/=):</strong> Divides the left operand by the right operand and assigns the result to the left operand.</li>
+        </ul>
+
+        <p>Example:</p>
+        <pre>
+            <code>
+                var a = 5;
+                var b = 3;
+                a += b; // Equivalent to: a = a + b;
+                a -= b; // Equivalent to: a = a - b;
+                a *= b; // Equivalent to: a = a * b;
+                a /= b; // Equivalent to: a = a / b;
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h3>Equality Operators</h3>
+        <p>Equality operators compare values and return a boolean result.</p>
+
+        <ul>
+            <li><strong>Equal (==):</strong> Returns true if the operands are equal, but performs type coercion.</li>
+            <li><strong>Strict Equal (===):</strong> Returns true if the operands are equal and of the same type.</li>
+            <li><strong>Not Equal (!=):</strong> Returns true if the operands are not equal, but performs type coercion.</li>
+            <li><strong>Strict Not Equal (!==):</strong> Returns true if the operands are not equal or not of the same type.</li>
+        </ul>
+
+        <p>Example:</p>
+        <pre>
+            <code>
+                var num1 = 5;
+                var num2 = "5";
+
+                var isEqual = num1 == num2;       // true (type coercion)
+                var isStrictEqual = num1 === num2; // false (different types)
+                var isNotEqual = num1 != num2;     // false (type coercion)
+                var isStrictNotEqual = num1 !== num2; // true (different types)
+            </code>
+        </pre>
+    </section>
+</body>
+</html>

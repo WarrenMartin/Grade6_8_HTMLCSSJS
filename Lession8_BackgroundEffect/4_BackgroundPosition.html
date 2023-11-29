@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Understanding Background Position</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #fff;
+            background-color: #333;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin: 10px 0;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .activity {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .output {
+            display: none;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .position-box {
+            width: 300px;
+            height: 200px;
+            background-image: url('image2.png');
+            background-position: right top;
+        }
+    </style>
+</head>
+<body>
+    <h1>Understanding Background Position</h1>
+
+    <div class="container">
+        <h2>Background Position Property</h2>
+        <p>The "background-position" property sets the starting position of a background image. You can specify positions using keywords like "left," "center," "right," "top," and "bottom," or using pixel values.</p>
+
+        <h3>Position: right top</h3>
+        <p>The "right top" value places the background image at the top-right corner of the element. It's like positioning an image in a book's top-right corner.</p>
+
+        <div class="activity">
+            <p>HTML:</p>
+            <pre>&lt;div class="position-box"&gt;Right Top&lt;/div&gt;</pre>
+            
+            <p>CSS:</p>
+            <pre>.position-box {<br>    background-image: url('background.jpg');<br>    background-position: right top;<br>    width: 300px;<br>    height: 200px;<br>}</pre>
+            
+            <button onclick="showOutput('output-right-top')">Show Output</button>
+            <div id="output-right-top" class="output">
+                <p>The "right top" value places the background image at the top-right corner of the element. It's like positioning an image in a book's top-right corner.</p>
+                <div class="position-box">Right Top</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showOutput(outputId) {
+            var output = document.getElementById(outputId);
+            if (output.style.display === "none" || output.style.display === "") {
+                output.style.display = "block";
+            } else {
+                output.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

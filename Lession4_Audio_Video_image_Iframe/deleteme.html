@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #104b97;
+            color: white;
+        }
+
+        .apply-button {
+            background-color: #104b97;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .apply-button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .job-description-button {
+            background-color: #104b97;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .job-description-button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .job-description {
+            display: none;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Property Consultant</td>
+            <td>Mumbai, Goa, Pune</td>
+            <td>Oct 17, 2023</td>
+            <td>
+                <button class="apply-button"><a href="https://api.whatsapp.com/send/?phone=919156091640&text=Hello..&type=phone_number&app_absent=0">Send Resume</a></button>
+                <button class="job-description-button">Job Description</button>
+            </td>
+        </tr>
+        <!-- Add more job listings here -->
+        <tr class="job-description">
+            <td colspan="4">
+                <strong>Job Description</strong>
+                <p>
+                    This is the job description for the Property Consultant position.
+                    
+                        <strong>Qualifications</strong>
+                        <ul>
+                            <li>Any Graduates / Fresher Invited</li>
+                            <li>Must have completed a Bachelor's Degree</li>
+                            <li>Excellent Analytical skills to evaluate properties for clients</li>
+                            <li>Thorough attention to detail</li>
+                            <li>Ability to deliver high-quality customer service</li>
+                            <li>Ability to communicate ideas and information effectively</li>
+                        </ul>
+                        <p>Send your Resume on <a href="mailto:careers@propertyplateau.com">careers@propertyplateau.com</a></p>
+                    
+                </p>
+            </td>
+        </tr>
+        <tr>
+            
+        </tr>
+    </table>
+
+    <script>
+        document.querySelector(".job-description-button").addEventListener("click", function() {
+            const jobDescriptionRow = document.querySelector(".job-description");
+            if (jobDescriptionRow.style.display === "none" || jobDescriptionRow.style.display === "") {
+                jobDescriptionRow.style.display = "table-row";
+            } else {
+                jobDescriptionRow.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>

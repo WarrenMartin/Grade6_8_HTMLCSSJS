@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Understanding Background Repeat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #fff;
+            background-color: #333;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin: 10px 0;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .activity {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .output {
+            display: none;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .repeat-box {
+            width: 200px;
+            height: 200px;
+            background-image: url('image2.png');
+        }
+
+        .repeat-box-repeat {
+            background-repeat: repeat;
+        }
+
+        .repeat-box-round {
+            background-repeat: round;
+        }
+
+        .repeat-box-space {
+            background-repeat: space;
+        }
+
+        .repeat-box-no-repeat {
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Understanding Background Repeat</h1>
+
+    <div class="container">
+        <h2>Background-Repeat Property</h2>
+        <p>The "background-repeat" property defines how a background image should be repeated. Here are four common values:</p>
+
+        <h3>1. repeat</h3>
+        <p>The background image is repeated both vertically and horizontally. It creates a seamless grid of the image, filling the entire element. This means the image is repeated as many times as needed to cover the entire background.</p>
+
+        <div class="activity">
+            <p>HTML:</p>
+            <pre>&lt;div class="repeat-box repeat-box-repeat"&gt;Repeat&lt;/div&gt;</pre>
+            
+            <p>CSS:</p>
+            <pre>.repeat-box-repeat {<br>    background-image: url('background.jpg');<br>    background-repeat: repeat;<br>    width: 200px;<br>    height: 200px;<br>}</pre>
+            
+            <button onclick="showOutput('output-repeat')">Show Output</button>
+            <div id="output-repeat" class="output">
+                <p>The background image is repeated both vertically and horizontally. It creates a seamless grid of the image, filling the entire element. This means the image is repeated as many times as needed to cover the entire background.</p>
+                <div class="repeat-box repeat-box-repeat">Repeat</div>
+            </div>
+        </div>
+
+        <h3>2. round</h3>
+        <p>The "round" value for "background-repeat" repeats the background image, and the last image is resized to fit the remaining space. If the background image doesn't perfectly fit the element, it will be stretched or compressed slightly to make it fit, ensuring there's no empty space.</p>
+
+        <div class="activity">
+            <p>HTML:</p>
+            <pre>&lt;div class="repeat-box repeat-box-round"&gt;Round&lt;/div&gt;</pre>
+            
+            <p>CSS:</p>
+            <pre>.repeat-box-round {<br>    background-image: url('background.jpg');<br>    background-repeat: round;<br>    width: 200px;<br>    height: 200px;<br>}</pre>
+            
+            <button onclick="showOutput('output-round')">Show Output</button>
+            <div id="output-round" class="output">
+                <p>The "round" value for "background-repeat" repeats the background image, and the last image is resized to fit the remaining space. If the background image doesn't perfectly fit the element, it will be stretched or compressed slightly to make it fit, ensuring there's no empty space.</p>
+                <div class="repeat-box repeat-box-round">Round</div>
+            </div>
+        </div>
+
+        <h3>3. space</h3>
+        <p>The "space" value for "background-repeat" repeats the background image with space between each repetition. This results in even distribution of the background images, with consistent spacing between them, covering the entire element.</p>
+
+        <div class "activity">
+            <p>HTML:</p>
+            <pre>&lt;div class="repeat-box repeat-box-space"&gt;Space&lt;/div&gt;</pre>
+            
+            <p>CSS:</p>
+            <pre>.repeat-box-space {<br>    background-image: url('background.jpg');<br>    background-repeat: space;<br>    width: 200px;<br>    height: 200px;<br>}</pre>
+            
+            <button onclick="showOutput('output-space')">Show Output</button>
+            <div id="output-space" class="output">
+                <p>The "space" value for "background-repeat" repeats the background image with space between each repetition. This results in even distribution of the background images, with consistent spacing between them, covering the entire element.</p>
+                <div class="repeat-box repeat-box-space">Space</div>
+            </div>
+        </div>
+
+        <h3>4. no-repeat</h3>
+        <p>The "no-repeat" value for "background-repeat" ensures the background image is displayed only once and is not repeated. If the element is larger than the image, it won't be stretched or repeated; it just displays once.</p>
+
+        <div class="activity">
+            <p>HTML:</p>
+            <pre>&lt;div class="repeat-box repeat-box-no-repeat"&gt;No Repeat&lt;/div&gt;</pre>
+            
+            <p>CSS:</p>
+            <pre>.repeat-box-no-repeat {<br>    background-image: url('background.jpg');<br>    background-repeat: no-repeat;<br>    width: 200px;<br>    height: 200px;<br>}</pre>
+            
+            <button onclick="showOutput('output-no-repeat')">Show Output</button>
+            <div id="output-no-repeat" class="output">
+                <p>The "no-repeat" value for "background-repeat" ensures the background image is displayed only once and is not repeated. If the element is larger than the image, it won't be stretched or repeated; it just displays once.</p>
+                <div class="repeat-box repeat-box-no-repeat">No Repeat</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showOutput(outputId) {
+            var output = document.getElementById(outputId);
+            if (output.style.display === "none" || output.style.display === "") {
+                output.style.display = "block";
+            } else {
+                output.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

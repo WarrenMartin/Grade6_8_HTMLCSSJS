@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn How to Hover</title>
+    <style>
+        /* CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #0077b6;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        a {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+        a:link {
+            color: red;
+        }
+        a:visited {
+            color: green;
+        }
+        a:hover {
+            color: hotpink;
+        }
+        a:active {
+            color: blue;
+        }
+        /* CSS code snippet style */
+        pre {
+            background-color: #f2f2f2;
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+            white-space: pre-wrap;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Learn How to Hover</h1>
+    </header>
+    <section>
+        <h2>:link (Unvisited Link)</h2>
+        <pre>
+            <code>
+&lt;a href="#"&gt;Unvisited Link&lt;/a&gt;
+a:link {
+    color: green;
+}
+            </code>
+        </pre>
+        <a href="#">Unvisited Link</a>
+
+        <h2>:visited (Visited Link)</h2>
+        <pre>
+            <code>
+&lt;a href="visited.html"&gt;Visited Link&lt;/a&gt;
+a:visited {
+    color: red;
+}
+            </code>
+        </pre>
+        <a href="visited.html">Visited Link</a>
+
+        <h2>:hover (Mouse Over Link)</h2>
+        <pre>
+            <code>
+&lt;a href="#"&gt;Mouse Over Link&lt;/a&gt;
+a:hover {
+    color: hotpink;
+}
+            </code>
+        </pre>
+        <a href="#">Mouse Over Link</a>
+
+        <h2>:active (Selected Link)</h2>
+        <pre>
+            <code>
+&lt;a href="#"&gt;Selected Link&lt;/a&gt;
+a:active {
+    color: blue;
+}
+            </code>
+        </pre>
+        <a href="#">Selected Link</a>
+    </section>
+</body>
+</html>

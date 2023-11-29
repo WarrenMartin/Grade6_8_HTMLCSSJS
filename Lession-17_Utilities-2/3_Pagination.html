@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Educational Webpage</title>
+</head>
+<body>
+
+    <div class="container mt-4">
+        <h2>Educational Webpage</h2>
+
+        <p>
+            Welcome to our educational webpage where we'll explore the Bootstrap classes used for pagination.
+        </p>
+
+        <h3>Pagination in Bootstrap</h3>
+
+        <p>
+            Pagination is used to divide content into separate pages and present them in a more organized way.
+            Bootstrap provides several classes to implement pagination easily.
+        </p>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <!-- The "Previous" button with aria-label attribute -->
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <!-- Visual representation of the "Previous" button -->
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <!-- The "Next" button with aria-label attribute -->
+                    <a class="page-link" href="#" aria-label="Next">
+                        <!-- Visual representation of the "Next" button -->
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <h3>Explanation of Bootstrap Pagination Classes</h3>
+
+        <ul>
+            <li><code>pagination</code>: The main class for pagination that provides basic styling.</li>
+            <li><code>page-item</code>: Represents an individual page item in the pagination list.</li>
+            <li><code>page-link</code>: Represents the link inside a page item.</li>
+            <li><code>disabled</code>: A utility class that disables the page link.</li>
+        </ul>
+
+        <h3>Explanation of ARIA Attributes</h3>
+
+        <ul>
+            <li><code>aria-label</code>: Provides a label or description for an element that is not represented by visible text. In our example, it describes the purpose of the "Previous" and "Next" buttons for screen readers.</li>
+            <li><code>aria-hidden</code>: Indicates whether an element and its subtree should be visible or hidden to accessibility tools. In our example, it is used to hide the visual representation of the "Previous" and "Next" buttons from screen readers to avoid redundant information.</li>
+        </ul>
+
+        <h3>Code Snippet</h3>
+
+        <p>HTML Code:</p>
+        <pre>
+            &lt;nav aria-label="Page navigation example"&gt;
+                &lt;ul class="pagination"&gt;
+                    &lt;li class="page-item"&gt;
+                        &lt;a class="page-link" href="#" aria-label="Previous"&gt;
+                            &lt;span aria-hidden="true"&gt;&laquo;&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class="page-item"&gt;
+                        &lt;a class="page-link" href="#" aria-label="Next"&gt;
+                            &lt;span aria-hidden="true"&gt;&raquo;&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        </pre>
+
+        <h3>Expected Output</h3>
+
+        <!-- Your Bootstrap pagination will be displayed here -->
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

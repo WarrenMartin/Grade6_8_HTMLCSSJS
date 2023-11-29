@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Education Theme - Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .lesson-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Education Theme - Webpage</h1>
+        <div class="lesson-title">Activity of Lesson 6</div>
+    </header>
+
+    <div class="container">
+        <h2>Activity 1:</h2>
+        <p>
+            Write a program to create a webpage to collect personal details like email, name, contact number (masked information), gender, and favorite city using an HTML form.
+        </p>
+
+        <button id="show-answer1">Show Answer</button>
+
+        <div id="answer1" style="display: none;">
+            <h2>Answer:</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}" placeholder="123-45-6789"><br>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br>
+
+                <label for="city">Favorite City:</label>
+                <input type="text" id="city" name="city"><br>
+            </form>
+        </div>
+
+        <script>
+            document.getElementById("show-answer1").addEventListener("click", function() {
+                var answerDiv = document.getElementById("answer1");
+                if (answerDiv.style.display === "none" || answerDiv.style.display === "") {
+                    answerDiv.style.display = "block";
+                } else {
+                    answerDiv.style.display = "none";
+                }
+            });
+        </script>
+    </div>
+
+    <div class="container">
+        <h2>Activity 2:</h2>
+        <p>
+            Write a program to create a webpage to collect personal details like email, name, gender, and date of birth by using the form element of HTML. Make sure you group these fields by using the fieldset element and give a caption to it.
+        </p>
+
+        <button id="show-answer2">Show Answer</button>
+
+        <div id="answer2" style="display: none;">
+            <h2>Answer:</h2>
+            <form>
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="name2">Name:</label>
+                    <input type="text" id="name2" name="name2"><br>
+
+                    <label for="email2">Email:</label>
+                    <input type="email" id="email2" name="email2"><br>
+
+                    <label for="gender2">Gender:</label>
+                    <select id="gender2" name="gender2">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob"><br>
+                </fieldset>
+            </form>
+        </div>
+
+        <script>
+            document.getElementById("show-answer2").addEventListener("click", function() {
+                var answerDiv = document.getElementById("answer2");
+                if (answerDiv.style.display === "none" || answerDiv.style.display === "") {
+                    answerDiv.style.display = "block";
+                } else {
+                    answerDiv.style.display = "none";
+                }
+            });
+        </script>
+    </div>
+
+    <div class="container">
+        <h2>Activity 3:</h2>
+        <p>
+            Write a program to create a webpage to enter marks of 3 different subjects for different students and display the average for these three subjects. To select a value for the subject, create a dropdown menu using the select element of HTML.
+        </p>
+
+        <button id="show-answer3">Show Answer</button>
+
+        <div id="answer3" style="display: none;">
+            <h2>Answer:</h2>
+            <form>
+                <label for="student">Student Name:</label>
+                <input type="text" id="student" name="student"><br>
+
+                <label for="subject1">Subject 1:</label>
+                <select id="subject1" name="subject1">
+                    <option value="100">Math</option>
+                    <option value="95">Science</option>
+                    <option value="90">History</option>
+                </select><br>
+
+                <label for="subject2">Subject 2:</label>
+                <select id="subject2" name="subject2">
+                    <option value="85">English</option>
+                    <option value="92">Art</option>
+                    <option value="88">Geography</option>
+                </select><br>
+
+                <label for="subject3">Subject 3:</label>
+                <select id="subject3" name="subject3">
+                    <option value="75">Physical Education</option>
+                    <option value="99">Computer Science</option>
+                    <option value="80">Music</option>
+                </select><br>
+
+                <button id="calculate-average">Calculate Average</button>
+
+                <p>Average Marks: <span id="average">0</span></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("show-answer3").addEventListener("click", function() {
+            var answerDiv = document.getElementById("answer3");
+            if (answerDiv.style.display === "none" || answerDiv.style.display === "") {
+                answerDiv.style.display = "block";
+            } else {
+                answerDiv.style.display = "none";
+            }
+        });
+
+        document.getElementById("calculate-average").addEventListener("click", function() {
+            var subject1 = parseInt(document.getElementById("subject1").value);
+            var subject2 = parseInt(document.getElementById("subject2").value);
+            var subject3 = parseInt(document.getElementById("subject3").value);
+
+            var average = (subject1 + subject2 + subject3) / 3;
+            document.getElementById("average").textContent = average.toFixed(2);
+        });
+    </script>
+</body>
+</html>

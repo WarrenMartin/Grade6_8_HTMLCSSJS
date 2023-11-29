@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active and Disabled Button</title>
+    <style>
+        /* CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #0077b6;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        button:active {
+            background-color: #999;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Active and Disabled Button</h1>
+    </header>
+    <section>
+        <h2>Active Button</h2>
+        <pre>
+            <code>
+&lt;button&gt;Click Me&lt;/button&gt;
+            </code>
+        </pre>
+        <button>Click Me</button>
+        <p>The button above demonstrates the <code>:active</code> pseudo-class. When you click and hold it, the background color changes to a darker shade (#999) to indicate the active state.</p>
+
+        <h2>Disabled Button</h2>
+        <pre>
+            <code>
+&lt;button disabled&gt;Disabled&lt;/button&gt;
+            </code>
+        </pre>
+        <button disabled>Disabled</button>
+        <p>The button above demonstrates the <code>:disabled</code> pseudo-class.  The cursor changes to "not-allowed," indicating that it cannot be clicked.</p>
+    </section>
+</body>
+</html>

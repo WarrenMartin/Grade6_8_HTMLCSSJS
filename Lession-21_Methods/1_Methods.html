@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 20px;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    p {
+      color: #555;
+    }
+    code {
+      background-color: #f0f0f0;
+      padding: 4px 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      display: block;
+      margin: 10px 0;
+    }
+    .code-example {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin: 20px 0;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <title>JavaScript Methods</title>
+</head>
+<body>
+  <h1>Understanding JavaScript Methods</h1>
+
+  <p>In JavaScript, methods are functions associated with objects. They can perform actions or provide information related to the object they are called on.</p>
+
+  <h2>String Methods</h2>
+
+  <div class="code-example">
+    <h3>toUpperCase()</h3>
+    <p>The <code>toUpperCase()</code> method converts a string to uppercase.</p>
+    <code>
+      const originalString = "hello";<br>
+      const uppercasedString = originalString.toUpperCase();<br>
+      console.log(uppercasedString);
+    </code>
+  </div>
+
+  <div class="code-example">
+    <h3>toLowerCase()</h3>
+    <p>The <code>toLowerCase()</code> method converts a string to lowercase.</p>
+    <code>
+      const originalString = "WORLD";<br>
+      const lowercasedString = originalString.toLowerCase();<br>
+      console.log(lowercasedString);
+    </code>
+  </div>
+
+  <div class="code-example">
+    <h3>startsWith()</h3>
+    <p>The <code>startsWith()</code> method checks if a string starts with a specified sequence of characters.</p>
+    <code>
+      const stringToCheck = "Hello, how are you?";<br>
+      const startsWithHello = stringToCheck.startsWith("Hello");<br>
+      console.log(startsWithHello);
+    </code>
+  </div>
+
+  <div class="code-example">
+    <h3>test()</h3>
+    <p>The <code>test()</code> method is used with regular expressions to test if a string contains a pattern.</p>
+    <code>
+      const pattern = /world/;<br>
+      const stringToTest = "Hello, world!";<br>
+      const containsWorld = pattern.test(stringToTest);<br>
+      console.log(containsWorld);
+    </code>
+  </div>
+
+  <h2>Math Methods</h2>
+
+  <div class="code-example">
+    <h3>Math.random() and Math.floor()</h3>
+    <p><code>Math.random()</code> generates a random decimal between 0 (inclusive) and 1 (exclusive). <code>Math.floor()</code> rounds a number down to the nearest integer.</p>
+    <code>
+      const randomDecimal = Math.random(); // Example: 0.764523987<br>
+      const randomInteger = Math.floor(randomDecimal * 10); // Example: 7<br>
+      console.log(randomInteger);
+    </code>
+  </div>
+
+</body>
+</html>
